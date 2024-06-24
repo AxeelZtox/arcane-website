@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://images4.alphacoders.com/119/1192524.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(128, 0, 128, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    padding: 15px 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu-item {
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu-separator {
+    color: #ff4081;
+    margin: 0 10px;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.menu-link:hover {
+    color: #ff4081;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.title-animate {
+    font-size: 48px;
+    color: #ff4081;
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.text-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 64, 129, 0.5);
+}
+
+.text-justify {
+    text-align: justify;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text-gradient-blue {
+    font-size: 32px;
+    background: linear-gradient(45deg, #00c3ff, #4173fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}

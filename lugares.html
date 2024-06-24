@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares - Wiki de Arcane</title>
+    <link rel="stylesheet" href="lugares.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Main_Index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="lugares.html"class="active">Lugares</a></li>
+                <li><a href="teorias.html" >Teorías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="gradient-title">Lugares</h1>
+            <div class="location-gallery">
+                <!-- Tarjetas de lugares -->
+                <div class="location-item">
+                    <div class="location-image" data-hover="piltover1.jpg" data-default="piltover.jpg">
+                        <img src="piltover.jpg" alt="Piltover">
+                    </div>
+                    <div class="location-content">
+                        <h2>Piltover</h2>
+                        <div class="location-description">
+                            <p>Es una ciudad brillante, próspera y avanzada tecnológicamente, conocida por sus innovaciones y como hogar de muchos inventores visionarios.</p>
+                            <a href="piltover.html" class="btn-neon">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-image" data-hover="zaun.jpeg" data-default="zaun1.webp">
+                        <img src="zaun.jpeg" alt="Zaun">
+                    </div>
+                    <div class="location-content">
+                        <h2>Zaun</h2>
+                        <div class="location-description">
+                            <p>Es la inquietante ciudad subterránea debajo de Piltover, plagada de peligros y donde reside la clase baja marginada, muchos experimentando con tecnología y química.</p>
+                            <a href="zaun.html" class="btn-neon">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agrega más tarjetas de lugares según sea necesario -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Contenido del pie de página -->
+    </footer>
+</body>
+<script>
+    document.querySelectorAll('.location-image').forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            const img = item.querySelector('img');
+            img.src = item.getAttribute('data-hover');
+        });
+        item.addEventListener('mouseleave', function() {
+            const img = item.querySelector('img');
+            img.src = item.getAttribute('data-default');
+        });
+    });
+</script>
+
+</html>
